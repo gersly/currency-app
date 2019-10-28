@@ -8,3 +8,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 4. Run `npm run start`
 
 !["screenshot of application"](app-screenshot "App Screenshot")
+

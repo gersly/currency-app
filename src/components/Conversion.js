@@ -5,15 +5,12 @@ class Conversion extends Component {
 
     render() {
         if(this.props.conversion.hasOwnProperty("amountToExchange")){
-            console.log("conversion", this.props.conversion.rates)
             const exchangeQuery = this.props.conversion
             let atRate = 0
             for (let [key,value] of Object.entries(this.props.conversion.rates)) {
-                console.log(value);
                 atRate = value
                 
               }
-            console.log("at thisr ate", atRate)
             const exchange = () => {
               return Math.round((exchangeQuery.amountToExchange * atRate) * 100) / 100
 
@@ -21,15 +18,16 @@ class Conversion extends Component {
             }
         return (
             <div >
-                <h6>Results</h6>
                 
-                <h1>{exchange()} <small className="lead">{exchangeQuery.exchangeTo}</small></h1>
-                
-
-            </div>
+                <h1 className="pt-4 pb-4">{exchange()} 
+                <small className="lead">
+                {exchangeQuery.exchangeTo}
+                </small>
+                </h1>
+         </div>
         )
         } else{
-           return <h5 className="pt-4">Loading...</h5>
+           return <p className="pt-4 pb-4">Curreny Converter</p>
         }
     }
 }

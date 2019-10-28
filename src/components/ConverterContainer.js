@@ -12,12 +12,7 @@ class ConverterContainer extends Component {
 
     onSubmit = (event) => {
         event.preventDefault()
-        this.props.getConversion(this.state)
-        // this.setState({
-        //     amount: '' || 1,
-        //     base: '' || 'EUR',
-        //     symbols: '' || 'USD'
-        //  })        
+        this.props.getConversion(this.state)      
     }
     
     onChange = (event) => {

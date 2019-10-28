@@ -7,4 +7,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 3. cd into your folder
 4. Run `npm run start`
 
-![App screenshot] (src/app-screenshot.png)
+!["screenshot of application"](app-screenshot "App Screenshot")
+

@@ -1,13 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ConverterContainer from './components/ConverterContainer';
 
-function App() {
+class App extends React.Component {
+
+  render(){
   return (
-    <div>
-      
+    <div className="App">
+      <ConverterContainer />
     </div>
   );
+  }
 }
 
 export default App;

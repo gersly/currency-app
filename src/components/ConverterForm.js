@@ -10,6 +10,8 @@ export default class ConverterForm extends Component {
             const countries =  Object.keys(this.props.rates.rates)
            return (
             <div className="App-header">
+
+             <Conversion />
             <form onSubmit={onSubmit}>
             <div className="row">
             <div className="col">
@@ -64,9 +66,8 @@ export default class ConverterForm extends Component {
             </div>
             </form>
             
-             <Conversion 
              
-             />
+            
             
            
         </div>

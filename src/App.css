@@ -18,3 +18,13 @@
   font-size: calc(5px + 2vmin);
   color: white;
 }
+
+
+.custom-select{
+  background: none;
+  color: #ffffff;
+}
+.form-control{
+  background: none;
+  color: #ffffff;
+}
